@@ -1,0 +1,186 @@
+{
+  "retrieved_at_utc": "2026-11-07T12:34:39.252004+00:00",
+  "model": "NLLB-200 MoE 54.5B",
+  "split": "FLORES-200 devtest",
+  "fixed_source_languages": [
+    "ace_Latn",
+    "asm_Beng",
+    "khm_Khmr",
+    "lao_Laoo",
+    "mya_Mymr",
+    "som_Latn"
+  ],
+  "target_language": "eng_Latn",
+  "archive": {
+    "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+    "bytes": 2268203489,
+    "etag": "\"ab938516700e45a2d1f322a3b91089de-271\"",
+    "last_modified": "Mon, 22 Aug 2022 20:38:31 GMT",
+    "retrieval": "HTTP Range selected ZIP members"
+  },
+  "network": {
+    "range_requests": 18,
+    "downloaded_zip_bytes": 310972
+  },
+  "references_retrieval": "local copy",
+  "analysis_status": "retrieval_and_line_count_validation_only; no scoring or annotation",
+  "licence_notice": "See ../../docs/licenses. Original NLLB model terms CC-BY-NC 4.0; FLORES data CC-BY-SA 4.0. No new licence is asserted over third-party materials.",
+  "files": [
+    {
+      "path": "hypotheses/flores200-ace_Latn-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "ace_Latn",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-ace_Latn-eng_Latn-devtest.hyp",
+      "bytes": 125577,
+      "lines": 1012,
+      "sha256": "4aa29f30e948109f187625964d1bf7843bc00645fbf376bee7b48e977b85fb81",
+      "zip_crc32": "de2e2b36",
+      "zip_compressed_bytes": 50987
+    },
+    {
+      "path": "hypotheses/flores200-asm_Beng-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "asm_Beng",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-asm_Beng-eng_Latn-devtest.hyp",
+      "bytes": 126136,
+      "lines": 1012,
+      "sha256": "c2524ea244b1496f1341a3437b47ab2d593b4ecab70ff433e27b0cfc45144f3b",
+      "zip_crc32": "599faeb4",
+      "zip_compressed_bytes": 51524
+    },
+    {
+      "path": "hypotheses/flores200-khm_Khmr-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "khm_Khmr",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-khm_Khmr-eng_Latn-devtest.hyp",
+      "bytes": 131572,
+      "lines": 1012,
+      "sha256": "9f6c3b3c7479db556c86c4633bdaf4d938e74ddd137d52e27c0d026367bc3d3f",
+      "zip_crc32": "9d77f7cf",
+      "zip_compressed_bytes": 53399
+    },
+    {
+      "path": "hypotheses/flores200-lao_Laoo-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "lao_Laoo",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-lao_Laoo-eng_Latn-devtest.hyp",
+      "bytes": 128317,
+      "lines": 1012,
+      "sha256": "7af4af5ffd912494beaab66a64b64ce192dbd032dcc5a04465790fc3b058e916",
+      "zip_crc32": "423fa08a",
+      "zip_compressed_bytes": 52021
+    },
+    {
+      "path": "hypotheses/flores200-mya_Mymr-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "mya_Mymr",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-mya_Mymr-eng_Latn-devtest.hyp",
+      "bytes": 128569,
+      "lines": 1012,
+      "sha256": "44a779f586637ba209f485064ad9dedf974f44f15333873bb666a9471a4c4c1c",
+      "zip_crc32": "79e6c7c0",
+      "zip_compressed_bytes": 52268
+    },
+    {
+      "path": "hypotheses/flores200-som_Latn-eng_Latn-devtest.hyp",
+      "role": "published_system_hypothesis",
+      "source_language": "som_Latn",
+      "target_language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/large_objects/nllb/translations/nllb_200_moe_54b/flores_translations.zip",
+      "archive_member": "flores_translations/flores200-som_Latn-eng_Latn-devtest.hyp",
+      "bytes": 123757,
+      "lines": 1012,
+      "sha256": "338c60ad25121e08d0daaec9df24e3c658d4ee2efdfad66309ae10735d765cd8",
+      "zip_crc32": "e0428c3a",
+      "zip_compressed_bytes": 50239
+    },
+    {
+      "path": "references/ace_Latn.devtest",
+      "role": "source_text",
+      "language": "ace_Latn",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/ace_Latn.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 145487,
+      "lines": 1012,
+      "sha256": "573639fbce4b216ec5aaaf8924a9c9b573768634a19e59461df4a039724dd7ab"
+    },
+    {
+      "path": "references/asm_Beng.devtest",
+      "role": "source_text",
+      "language": "asm_Beng",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/asm_Beng.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 336088,
+      "lines": 1012,
+      "sha256": "8735ea696166646f44cb82a835cb85b98d4966abb26a3e190d1d95cef3c42046"
+    },
+    {
+      "path": "references/khm_Khmr.devtest",
+      "role": "source_text",
+      "language": "khm_Khmr",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/khm_Khmr.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 436174,
+      "lines": 1012,
+      "sha256": "abc58e38a8a41ec2201c885131568ce6689ea810cf10ccca6286ebaca6e24198"
+    },
+    {
+      "path": "references/lao_Laoo.devtest",
+      "role": "source_text",
+      "language": "lao_Laoo",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/lao_Laoo.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 361750,
+      "lines": 1012,
+      "sha256": "dc79a047e07471ea00803ea49b05c3a77682cc4023569487c29dbadc47072b2b"
+    },
+    {
+      "path": "references/mya_Mymr.devtest",
+      "role": "source_text",
+      "language": "mya_Mymr",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/mya_Mymr.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 466540,
+      "lines": 1012,
+      "sha256": "bbccb36a909003dfbaf68cf59b63729769cab723a0f90a85f68efd9ded7b1512"
+    },
+    {
+      "path": "references/som_Latn.devtest",
+      "role": "source_text",
+      "language": "som_Latn",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/som_Latn.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 152954,
+      "lines": 1012,
+      "sha256": "bfd08dd07bd95b5621e4d29cd043c4d0cf1c0e75c934991641bbff125e2d876c"
+    },
+    {
+      "path": "references/eng_Latn.devtest",
+      "role": "reference",
+      "language": "eng_Latn",
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "archive_member": "./flores200_dataset/devtest/eng_Latn.devtest",
+      "archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "bytes": 133108,
+      "lines": 1012,
+      "sha256": "612e9fbe87997617c0fa8fa8929654a4f49b728d96738112c2b86ef6a1d78d88"
+    }
+  ],
+  "references_local_copy_verified_against_original_archive": true
+}
