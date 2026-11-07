@@ -1,0 +1,4 @@
+model,primary_delta_gap,script_weighted_delta_gap,median_difference,leave_one_out_min,leave_one_out_max,leave_one_out_sign_stable_count,leave_one_out_total
+distilled_600m,2.79659090909,2.40583885773,2.8,2.58171534348,3.31798985328,195,195
+dense_3b,3.69825174825,3.23934217236,3.2,3.49983748646,4.24870423694,195,195
+moe_54b,4.27910839161,3.89154767976,4,4.09138214726,4.84922528452,195,195
