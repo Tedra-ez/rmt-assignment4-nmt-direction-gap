@@ -1,0 +1,40 @@
+{
+  "record_type": "Assignment 4 Appendix C human reproduction test",
+  "status": "completed",
+  "person": "Sembayeva Aizada",
+  "role": "team member (did not write the analysis code)",
+  "date_and_time_with_timezone": "2026-11-07T23:30:21+05:00",
+  "machine": "AMD64",
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.5",
+  "commit_or_release_tag": "assignment-4 -> ee03474541de5e01f089cd60f3e272656d338c5d (checked out ee03474541de5e01f089cd60f3e272656d338c5d; match=True)",
+  "environment_setup_status": "new isolated venv created by scripts/reproduce_check.py",
+  "commands_executed": [
+    "git clone https://github.com/Tedra-ez/rmt-assignment4-nmt-direction-gap.git",
+    "git checkout assignment-4",
+    "python3.12 scripts/reproduce_check.py",
+    "-m venv C:\\Users\\semba\\AppData\\Local\\Temp\\assignment4-reproduction-t2_of_s6\\repository\\.venv",
+    "-m pip install -r requirements.txt",
+    "-c import sys,platform,json,importlib.metadata as m;print(json.dumps({'python':sys.version,'executable':sys.executable,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'os':platform.platform(),'machine':platform.machine(),'packages':{d.metadata['Name']:d.version for d in m.distributions()}},sort_keys=True))",
+    "-m pip freeze",
+    "-m unittest discover -s scripts -p test_analysis.py",
+    "scripts/analyze.py --validate-only",
+    "scripts/analyze.py --local-protocol-record protocol/local_freeze_record.json",
+    "-m pip check",
+    "compare reproduced outputs with published results"
+  ],
+  "main_results_table_reproduced": "Yes",
+  "comparison_status": "0/10 numerical CSV/JSON files byte-identical; 4/5 saved arrays exactly equal; 7/8 figures byte-identical. By value (line endings ignored, tolerance 1e-9): 10/10 numerical files equal; 5/5 arrays within tolerance. Figures are compared by bytes for information only; rendering can differ across operating systems.",
+  "differences_observed": "12 byte-level difference(s) only; all numerical values match within 1e-9. Typical causes: CRLF line endings on Windows, last-digit floating-point differences between CPU architectures, and figure rendering differences; see byte_level_differences.",
+  "explanation_of_differences": "Only timestamps, paths, runtime and environment metadata differ.",
+  "readme_problems_and_fixes": "None found; README commands worked as written.",
+  "evidence_files": [
+    "C:\\Users\\semba\\AppData\\Local\\Temp\\assignment4-reproduction-t2_of_s6\\reproduction_report.json",
+    "C:\\Users\\semba\\AppData\\Local\\Temp\\assignment4-reproduction-t2_of_s6\\evidence"
+  ],
+  "human_confirmation": "I, Sembayeva Aizada, personally ran this check and reviewed the output.",
+  "instructions": "A different team member or eligible classmate must personally run the README commands in a clean environment and complete this record truthfully. An assistant run or automated technical check does not complete this human reproduction test. Keep pending fields unchanged until the corresponding action is performed.",
+  "completed_technical_check": "docs/technical_reproduction_public_release.json",
+  "personal_run_command": "python3 scripts/reproduce_check.py",
+  "technical_check_is_not_human_confirmation": true
+}

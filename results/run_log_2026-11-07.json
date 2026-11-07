@@ -1,0 +1,181 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-07T12:53:01.235640+00:00",
+  "protocol_sha256": "3d79cbf30ca76b3c1d54e217ba6205af07009a95170c91fa44eb762fb78a4629",
+  "script_sha256": "fb7a61a8a4aaf895479744e11d95933edb280de5f3b18474ef367a4970f621a1",
+  "execution_mode": "local_preanalysis_freeze",
+  "protocol_execution_record": {
+    "mode": "local_preanalysis_freeze",
+    "moodle_upload_status": "not_performed",
+    "noncompliance": "The protocol was prepared locally before this analysis, but Appendix A was not uploaded to Moodle before the final analysis. This is a declared deviation from the assignment submission rule; local preparation does not satisfy that rule.",
+    "prepared_at": "2026-11-07T17:31:07+05:00",
+    "protocol_sha256": "3d79cbf30ca76b3c1d54e217ba6205af07009a95170c91fa44eb762fb78a4629",
+    "protocol_docx_sha256": "e5cfbc9d905526900397b781a3ab6869abb36d2c32e600a63b8fabbab098eb53",
+    "protocol_docx_path": "/Users/zhanibek/Desktop/RMT/Assignment4_submission/reproducibility/protocol/Appendix_A_Protocol_Ismagambetova_Sembayeva_Yskak.docx",
+    "docx_hash_checked_against_local_file": true,
+    "record_path": "/Users/zhanibek/Desktop/RMT/Assignment4_submission/reproducibility/protocol/local_freeze_record.json",
+    "record_sha256": "ecdd13fb48e87beb7d2f93f67d041136190a2fa03fdde2dd7c16487ef2fc3811",
+    "verification_limit": "Checks establish file identity and recorded chronology, not an external timestamp or Moodle submission."
+  },
+  "upload_record": null,
+  "input_validation": {
+    "script_units": 201,
+    "base_languages": 195,
+    "script_group_counts": {
+      "high": 53,
+      "low": 148
+    },
+    "language_group_counts": {
+      "high": 52,
+      "low": 143
+    },
+    "group_labels_agree_across_scripts": true,
+    "models": {
+      "distilled_600m": {
+        "raw_records": 602,
+        "retained_directions": 402,
+        "excluded_non_english_directions": 200
+      },
+      "dense_3b": {
+        "raw_records": 602,
+        "retained_directions": 402,
+        "excluded_non_english_directions": 200
+      },
+      "moe_54b": {
+        "raw_records": 40602,
+        "retained_directions": 402,
+        "excluded_non_english_directions": 40200
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.16.3",
+      "matplotlib": "3.10.7"
+    }
+  },
+  "command": [
+    "scripts/analyze.py",
+    "--local-protocol-record",
+    "protocol/local_freeze_record.json"
+  ],
+  "stage_seconds": {
+    "aggregate": 0.02565883299757843,
+    "bootstrap": 0.11340079200090258,
+    "permutation": 0.4545507499969972,
+    "robustness_and_tables": 0.2523101660008251,
+    "figures": 2.545506042002671
+  },
+  "randomness": {
+    "root_seed": 20261108,
+    "algorithm": "NumPy PCG64",
+    "seedsequence_spawn_keys": {
+      "bootstrap": [
+        0
+      ],
+      "permutation": [
+        1
+      ],
+      "plot_jitter": [
+        2
+      ]
+    },
+    "bootstrap_batch_size": 256,
+    "permutation_batch_size": 512,
+    "quantile_method": "linear",
+    "floating_tie_tolerance": "100*eps*max(1,abs(T_observed))"
+  },
+  "completed_at": "2026-11-07T12:53:04.751082+00:00",
+  "elapsed_seconds": 3.5152609159995336,
+  "outputs": [
+    {
+      "file": "results/analysis_summary.json",
+      "sha256": "2763afd13fc070cebe19afa4d076cae84f7eab8c37089d6ded6ea341f9a58106"
+    },
+    {
+      "file": "results/bootstrap_draws.npz",
+      "sha256": "421a7813f81c3110c07f9f0493c8e00ce1537858abaa2a502fce8ad150d2347f"
+    },
+    {
+      "file": "results/diagnostics.csv",
+      "sha256": "d79a300f52c8d1dc210dd14fc3c3cf5ac2a7a1e8d49e950445a11c1deafd197f"
+    },
+    {
+      "file": "results/leave_one_out.csv",
+      "sha256": "4159d75b5881dde309e4bacbf0a0567cab01f7e7bc2863e3013299a6b6132cf8"
+    },
+    {
+      "file": "results/main_results_long.csv",
+      "sha256": "a322f72c54198610a0f57abc932cd1cef7e78887cb7d1b4ae59d693a65b85eff"
+    },
+    {
+      "file": "results/main_summary.csv",
+      "sha256": "de4560cd1436d2fcca97d33c2503e414e411dc667fa6881cf02df7172a9e0573"
+    },
+    {
+      "file": "results/per_language_scores.csv",
+      "sha256": "8787ccde7c16f41f136ea6b201e410c0cb5968f852ca09544783a13f644cefd1"
+    },
+    {
+      "file": "results/per_script_scores.csv",
+      "sha256": "5d77e210837ab4c6f6d960c785583273101db7806f0f807712ba0b0a7481484f"
+    },
+    {
+      "file": "results/permutation_statistics.npz",
+      "sha256": "f9b53ef0718f1dff32ab4ef9b66739167f9798c351585d23cdf95694a749f53d"
+    },
+    {
+      "file": "results/provenance.json",
+      "sha256": "ede5b15f19befb6c40940e4e9d9ed7421b45a79214514aa58bac5f4d242aff42"
+    },
+    {
+      "file": "results/robustness.csv",
+      "sha256": "0d396989bc50f7a9d8ee6b20731d070bc70be91a8c09c978b076450fc57d576c"
+    },
+    {
+      "file": "results/statistical_tests.csv",
+      "sha256": "2cc55676df49d97267ad54a9042f41c8816b7ef52fa0f56deab5de6416d1be38"
+    },
+    {
+      "file": "results/subgroup_results.csv",
+      "sha256": "35f5a8136c6f32342a3c1bb30c64f841e445bfd3662d1e5b31d0dfb6418b1e67"
+    },
+    {
+      "file": "figures/figure_1_resource_gaps.png",
+      "sha256": "ccd6410d7bdfd539870ff1587eda2f9a1f0e7001c8bd592b9c662048a0d12140"
+    },
+    {
+      "file": "figures/figure_1_resource_gaps.pdf",
+      "sha256": "a2e7333baf51f9466cfcc4ad0e3ca020b4c9985803a609d26179fa994d3b160a"
+    },
+    {
+      "file": "figures/figure_2_delta_gap.png",
+      "sha256": "c9587385b61f4bf11582e5af651d9f9dde82daa88acb4778a84eba315a96489e"
+    },
+    {
+      "file": "figures/figure_2_delta_gap.pdf",
+      "sha256": "5e2296d1088d71ef9464f536e8d8f185049d9b53db1a2fbb24839312e127e379"
+    },
+    {
+      "file": "figures/figure_3_language_differences.png",
+      "sha256": "6fc8086245ecbfff9dbd860282b53c32265007cd130e5d03c47e4a562664d7e6"
+    },
+    {
+      "file": "figures/figure_3_language_differences.pdf",
+      "sha256": "d1a29e6fc71f2ddd7c21ac9eddcc5fa09fc00360cadeab85e5a71d9e08c4d3b7"
+    },
+    {
+      "file": "figures/figure_4_robustness.png",
+      "sha256": "8b71525423499f08f2c923b8b6484dc064b05e2a564cfabf8d90ca4c3feadbf6"
+    },
+    {
+      "file": "figures/figure_4_robustness.pdf",
+      "sha256": "225f675d3145f4e9b27c49e1d82d716d833b1249fff03b0fc711328f4485062d"
+    }
+  ]
+}
