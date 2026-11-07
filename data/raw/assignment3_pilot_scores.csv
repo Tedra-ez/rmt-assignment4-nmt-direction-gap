@@ -1,0 +1,53 @@
+study,system,metric,benchmark,direction,language,resource_group,score
+NLLB Team (2024),Baseline MoE,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,high,54.3
+NLLB Team (2024),Baseline MoE,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,low,41.4
+NLLB Team (2024),Baseline MoE,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,high,64.0
+NLLB Team (2024),Baseline MoE,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,low,53.4
+NLLB Team (2024),Baseline MoE + CL,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,high,54.7
+NLLB Team (2024),Baseline MoE + CL,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,low,41.8
+NLLB Team (2024),Baseline MoE + CL,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,high,64.5
+NLLB Team (2024),Baseline MoE + CL,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,low,55.1
+NLLB Team (2024),Baseline MoE + CL + EOM,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,high,52.9
+NLLB Team (2024),Baseline MoE + CL + EOM,chrF++,FLORES-200 dev,eng-xx,GROUP_MEAN,low,41.6
+NLLB Team (2024),Baseline MoE + CL + EOM,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,high,61.4
+NLLB Team (2024),Baseline MoE + CL + EOM,chrF++,FLORES-200 dev,xx-eng,GROUP_MEAN,low,55.1
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,ar,high,48.26
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,ar,high,43.03
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,cs,high,45.31
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,cs,high,42.38
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,de,high,49.8
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,de,high,46.62
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,es,high,38.8
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,es,high,33.05
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,fa,high,44.19
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,fa,high,36.13
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,fr,high,51.54
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,fr,high,56.16
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,hi,high,47.26
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,hi,high,40.55
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,it,high,41.56
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,it,high,38.27
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,ja,high,34.54
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,ja,high,20.07
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,km,low,38.64
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,km,low,22.97
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,ko,high,35.42
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,ko,high,26.72
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,lo,low,42.4
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,lo,low,29.59
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,my,low,34.73
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,my,low,17.74
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,nl,high,38.94
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,nl,high,35.61
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,pl,high,36.68
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,pl,high,32.54
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,pt,high,55.19
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,pt,high,52.87
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,ru,high,42.21
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,ru,high,41.03
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,tr,high,45.82
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,tr,high,41.52
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,vi,high,43.75
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,vi,high,43.3
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,xx-eng,zh,high,36.13
+Cui et al. (2025) v2,NLLB-54.5B,spBLEU,FLORES-200 Table 5 reported evaluation,eng-xx,zh,high,26.61

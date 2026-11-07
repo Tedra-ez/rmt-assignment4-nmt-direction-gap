@@ -1,0 +1,32 @@
+[
+  {
+    "file": "data/raw/nllb_200_dense_distill_600m_metrics.csv",
+    "sha256": "6feb8ca1c83b804df453474de172a45785953c66762c1cff3fe18e70a300d666",
+    "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_dense_distill_600m/metrics.csv"
+  },
+  {
+    "file": "data/raw/nllb_200_dense_3b_metrics.csv",
+    "sha256": "2a86eb48a82b1dc597124e20e65734393970662ee6da0064e0c8f72b6bd2747e",
+    "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_dense_3b/metrics.csv"
+  },
+  {
+    "file": "data/raw/nllb_200_moe_54b_metrics.csv",
+    "sha256": "25830c7bb965c9e09807fb20c30467b091595d19265b97d83ca00dc269a0fde5",
+    "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_moe_54b/metrics.csv"
+  },
+  {
+    "file": "data/raw/resource_groups.csv",
+    "sha256": "79e0e02310da54e8f6dd825b7050d133e4a15a3c8b9aeea17b6d2758fce7d081",
+    "source": "Derived from the two pinned source files listed above; no translation scores used."
+  },
+  {
+    "file": "data/raw/flores200_public.py",
+    "sha256": "871a07a8b75442db5f93d0b88aa49501070445809837d1f6aba605855d1779ba",
+    "source": "https://raw.githubusercontent.com/facebookresearch/fairseq/ec0ae71a24fbc2f42252f37735f59dd6547eba38/examples/nllb/modeling/evaluation/train_example_count/flores200_public.py"
+  },
+  {
+    "file": "data/raw/nllb_grouping_original.py",
+    "sha256": "b38462d1c97e51c74232e2e8ef8e6be295eda9103cc00065aaa19d539b5b6f37",
+    "source": "https://raw.githubusercontent.com/facebookresearch/fairseq/ec0ae71a24fbc2f42252f37735f59dd6547eba38/examples/nllb/modeling/evaluation/generate_multi.py"
+  }
+]

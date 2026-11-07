@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_uploaded",
+  "prepared_at": "2026-11-07T17:31:07+05:00",
+  "protocol_json_sha256": "3d79cbf30ca76b3c1d54e217ba6205af07009a95170c91fa44eb762fb78a4629",
+  "protocol_docx_file": "Appendix_A_Protocol_Ismagambetova_Sembayeva_Yskak.docx",
+  "protocol_docx_sha256": "e5cfbc9d905526900397b781a3ab6869abb36d2c32e600a63b8fabbab098eb53",
+  "moodle_upload_evidence": null,
+  "final_analysis_executed": false
+}

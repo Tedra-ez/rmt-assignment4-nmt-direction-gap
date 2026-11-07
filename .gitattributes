@@ -1,0 +1,3 @@
+# Preserve exact source and output bytes for recorded SHA-256 checks on all OSes.
+# In particular, do not normalize the frozen CSV files between CRLF and LF.
+* -text
