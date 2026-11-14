@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-11-14T19:43:20.310191+00:00",
+  "verification_type": "assistant technical check of sentence-score selection in isolated audit copy",
+  "inputs": "13 original files retrieved and checked against inherited SHA-256 hashes",
+  "commands": [
+    "python scripts/fetch_error_data.py",
+    "python scripts/select_error_cases.py"
+  ],
+  "sentences_scored": 6072,
+  "selected_cases": 60,
+  "generated_files": [
+    {
+      "path": "results/error_audit/all_sentence_scores.csv",
+      "sha256": "0979fb3b93538b0a137e095ac08161b009b17087c816a88fbb306dcc00b8c34d",
+      "matches_freshly_selected_file": true
+    },
+    {
+      "path": "results/error_audit/candidates_round_01.csv",
+      "sha256": "b04be0e60f22f9667bbea56ad9eb1171ad9669c01327e50db633c7f69452fe62",
+      "matches_freshly_selected_file": true
+    }
+  ],
+  "annotation_note": "Selection is computationally reproduced. Human review labels are inherited, not reproduced or independently validated."
+}

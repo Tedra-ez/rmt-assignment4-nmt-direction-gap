@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "prepared_at": "2026-11-07T17:31:07+05:00",
+  "timezone": "Asia/Almaty",
+  "moodle_upload_status": "pending",
+  "moodle_upload_timestamp": null,
+  "research_question": "How does the reported translation-quality gap between low- and high-resource language groups differ between translation into English and translation from English in multilingual NMT evaluations?",
+  "design": "Quantitative secondary analysis of published matched benchmark scores; no new model training or inference.",
+  "prior_knowledge": "The four descriptive Assignment 3 contrasts are already known. This prospective plan covers the expanded final analysis only.",
+  "models": [
+    {
+      "id": "distilled_600m",
+      "label": "NLLB-200 Distilled 600M",
+      "role": "smaller existing-system baseline",
+      "file": "data/raw/nllb_200_dense_distill_600m_metrics.csv"
+    },
+    {
+      "id": "dense_3b",
+      "label": "NLLB-200 Dense 3.3B",
+      "role": "strong dense baseline",
+      "file": "data/raw/nllb_200_dense_3b_metrics.csv"
+    },
+    {
+      "id": "moe_54b",
+      "label": "NLLB-200 MoE 54.5B",
+      "role": "primary examined published condition",
+      "file": "data/raw/nllb_200_moe_54b_metrics.csv"
+    }
+  ],
+  "primary_model": "moe_54b",
+  "metric": "chrF++",
+  "primary_outcome": "DeltaGap = Gap_from_English - Gap_into_English",
+  "gap_definition": "mean(high) - mean(low)",
+  "benchmark": "Original FLORES-200 devtest, 1012 sentences per direction",
+  "coverage": {
+    "language_script_pairs": 201,
+    "directions_per_model": 402,
+    "scores_three_models": 1206,
+    "base_languages": 195,
+    "high_base_languages": 52,
+    "low_base_languages": 143
+  },
+  "unit": "ISO 639-3 base language; average script variants equally within each language, direction, and model before any group aggregation.",
+  "resource_definition": "High >= 1000000 publicly available training examples in the pinned Meta map; Low < 1000000, including the nested very-low subset <=100000.",
+  "matching": "Retain complete English-centric pairs common to all three models with resource metadata. Expected coverage is fixed above. Stop and diagnose any unexpected coverage or hash mismatch; never silently drop observations.",
+  "primary_analysis": {
+    "runs": "One deterministic secondary-data analysis. Resamples are statistical calculations, not model runs.",
+    "seed": 20261108,
+    "bootstrap_resamples": 20000,
+    "bootstrap_ci": "two-sided percentile 95%",
+    "resampling": "Stratified base-language bootstrap within the 52 High and 143 Low units, retaining direction and model pairing; use identical resample indices across models.",
+    "test": "Independent-group label-permutation association test on d = score_into_English - score_from_English, T = mean(d_low) - mean(d_high).",
+    "permutation_resamples": 100000,
+    "two_sided_p": "(1 + number of permutations with abs(T_perm) >= abs(T_observed))/(100000 + 1)",
+    "multiplicity": "Holm correction across the three predeclared model-specific tests, alpha=0.05.",
+    "assumptions": "Language-level exchangeability under the permutation null, without a causal interpretation; related languages may remain dependent. CI is language-resampling uncertainty, not training-seed or sentence-level uncertainty.",
+    "support_rule": "For a model, support the directional-difference hypothesis within this benchmark if Holm-adjusted p < 0.05 and the 95% CI excludes zero. Otherwise mark the inferential claim not supported; do not accept H0 as proven. Describe cross-model consistency separately."
+  },
+  "robustness": [
+    "Repeat descriptive gaps with all 201 language-script units weighted equally.",
+    "Compare mean(d_low)-mean(d_high) with median(d_low)-median(d_high).",
+    "Leave one base language out at a time; report the full range and sign stability.",
+    "Separate the nested very-low subset from the remaining Low languages and show subgroup results."
+  ],
+  "error_audit": {
+    "model": "moe_54b",
+    "direction": "into English",
+    "languages": [
+      "ace_Latn",
+      "asm_Beng",
+      "khm_Khmr",
+      "lao_Laoo",
+      "mya_Mymr",
+      "som_Latn"
+    ],
+    "source": "Official published NLLB-200 MoE translations and original FLORES-200 devtest references.",
+    "selection": "Compute sentence chrF++ with SacreBLEU 2.5.1, char_order=6, word_order=2, beta=2. For each fixed language select its 10 lowest-scoring items, tie-break by 1-based sentence ID. Inspect all 60 candidates in round-robin language order. If fewer than 30 identifiable errors are found, extend by the next 10 per language, using the same rule. Retain every screened record and any rejected candidate reason. If fewer than 30 errors exist in all retrieved cases, report all identifiable errors.",
+    "categories": [
+      "omission or truncation",
+      "unsupported addition or repetition",
+      "named entity or number error",
+      "meaning substitution",
+      "grammar or word-order defect"
+    ],
+    "coding": "Assign one dominant observable discrepancy per confirmed case, record evidence and uncertainty. Acceptable paraphrases are not counted as errors.",
+    "limits": "Purposive diagnostic sample; percentages describe the audited errors only, not model error prevalence. English-reference agreement does not establish complete source-language adequacy."
+  },
+  "figures": [
+    "Resource gaps in both directions for all three models",
+    "DeltaGap with 95% intervals and a zero reference",
+    "Language-level direction differences and robustness summaries"
+  ],
+  "reproduction": "A separate technical clean-environment check will be logged. Another student must independently execute the README and complete Appendix C; an assistant rerun is not that human reproduction test.",
+  "data_manifest": [
+    {
+      "file": "data/raw/nllb_200_dense_distill_600m_metrics.csv",
+      "sha256": "6feb8ca1c83b804df453474de172a45785953c66762c1cff3fe18e70a300d666",
+      "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_dense_distill_600m/metrics.csv"
+    },
+    {
+      "file": "data/raw/nllb_200_dense_3b_metrics.csv",
+      "sha256": "2a86eb48a82b1dc597124e20e65734393970662ee6da0064e0c8f72b6bd2747e",
+      "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_dense_3b/metrics.csv"
+    },
+    {
+      "file": "data/raw/nllb_200_moe_54b_metrics.csv",
+      "sha256": "25830c7bb965c9e09807fb20c30467b091595d19265b97d83ca00dc269a0fde5",
+      "source": "https://dl.fbaipublicfiles.com/large_objects/nllb/models/nllb_200_moe_54b/metrics.csv"
+    },
+    {
+      "file": "data/raw/resource_groups.csv",
+      "sha256": "79e0e02310da54e8f6dd825b7050d133e4a15a3c8b9aeea17b6d2758fce7d081",
+      "source": "Derived from the two pinned source files listed above; no translation scores used."
+    },
+    {
+      "file": "data/raw/flores200_public.py",
+      "sha256": "871a07a8b75442db5f93d0b88aa49501070445809837d1f6aba605855d1779ba",
+      "source": "https://raw.githubusercontent.com/facebookresearch/fairseq/ec0ae71a24fbc2f42252f37735f59dd6547eba38/examples/nllb/modeling/evaluation/train_example_count/flores200_public.py"
+    },
+    {
+      "file": "data/raw/nllb_grouping_original.py",
+      "sha256": "b38462d1c97e51c74232e2e8ef8e6be295eda9103cc00065aaa19d539b5b6f37",
+      "source": "https://raw.githubusercontent.com/facebookresearch/fairseq/ec0ae71a24fbc2f42252f37735f59dd6547eba38/examples/nllb/modeling/evaluation/generate_multi.py"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+model,statistic,test,extreme_permutations,permutations,p_unadjusted,p_holm,holm_family_size,ci_excludes_zero,hypothesis_status,association_direction
+distilled_600m,2.79659090909,two-sided resource-label permutation association,713,100000,0.00713992860071,0.00713992860071,3,True,supported within benchmark assumptions,larger_from_English
+dense_3b,3.69825174825,two-sided resource-label permutation association,76,100000,0.000769992300077,0.00153998460015,3,True,supported within benchmark assumptions,larger_from_English
+moe_54b,4.27910839161,two-sided resource-label permutation association,15,100000,0.000159998400016,0.000479995200048,3,True,supported within benchmark assumptions,larger_from_English

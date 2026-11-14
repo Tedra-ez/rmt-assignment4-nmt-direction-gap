@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+range_cache/
+data/error_audit/hypotheses/
+data/error_audit/references/

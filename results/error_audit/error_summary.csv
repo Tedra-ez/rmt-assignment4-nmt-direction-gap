@@ -1,0 +1,31 @@
+section,item,count,percent_of_errors
+status,confirmed_error,37,
+status,acceptable_paraphrase,8,
+status,uncertain,15,
+error_type,meaning substitution,25,67.6
+error_type,omission or truncation,10,27.0
+error_type,named entity or number error,1,2.7
+error_type,unsupported addition or repetition,1,2.7
+error_type,grammar or word-order defect,0,0.0
+source_reference_flag,none_detected,33,
+source_reference_flag,not_assessed,4,
+source_reference_flag,suspected,23,
+suspected_flag_by_status,confirmed_error,10,
+suspected_flag_by_status,uncertain,13,
+language:ace_Latn,confirmed_error,9,
+language:ace_Latn,uncertain,1,
+language:asm_Beng,acceptable_paraphrase,1,
+language:asm_Beng,confirmed_error,5,
+language:asm_Beng,uncertain,4,
+language:khm_Khmr,acceptable_paraphrase,1,
+language:khm_Khmr,confirmed_error,7,
+language:khm_Khmr,uncertain,2,
+language:lao_Laoo,acceptable_paraphrase,2,
+language:lao_Laoo,confirmed_error,7,
+language:lao_Laoo,uncertain,1,
+language:mya_Mymr,acceptable_paraphrase,3,
+language:mya_Mymr,confirmed_error,5,
+language:mya_Mymr,uncertain,2,
+language:som_Latn,acceptable_paraphrase,1,
+language:som_Latn,confirmed_error,4,
+language:som_Latn,uncertain,5,

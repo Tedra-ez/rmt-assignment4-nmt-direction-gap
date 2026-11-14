@@ -1,0 +1,66 @@
+{
+  "description": "Final-manuscript artifacts, generated from saved numerical outputs; no new primary inference.",
+  "table_numbers": {
+    "2": "group means and direction gaps",
+    "3": "main inference",
+    "4": "sensitivity checks",
+    "5": "resource subgroups",
+    "6": "purposive diagnostic audit"
+  },
+  "figure3_note": "Three disjoint groups: high, low excluding very low, very low. No uncertainty intervals are inferred for subgroup means.",
+  "figure4_note": "Purposive low-scoring sample; these counts do not estimate model error prevalence. Labels reproduce the inherited review file.",
+  "files": [
+    {
+      "path": "results/final/table2_group_means.csv",
+      "sha256": "4e5d07fc140ad12470ec34263cddf2bfeb092c22dff20bfe08019fb955b08ac0"
+    },
+    {
+      "path": "results/final/table3_main_statistics.csv",
+      "sha256": "ccb3ec747259763e2e16b2faa9ef1e284e03791dc117c4fb7ff90db3ab7a9793"
+    },
+    {
+      "path": "results/final/table4_robustness.csv",
+      "sha256": "0d396989bc50f7a9d8ee6b20731d070bc70be91a8c09c978b076450fc57d576c"
+    },
+    {
+      "path": "results/final/table5_subgroup_diagnostics.csv",
+      "sha256": "f877004b9ee52408a76c2e1fd023e8b65e0c888556bde2c1a1bc3ca7b08aa164"
+    },
+    {
+      "path": "results/final/table6_diagnostic_audit.csv",
+      "sha256": "72877abb0f6010cd970390e5e179bc07ebff01f630f6e92bfb30c487f33db1f1"
+    },
+    {
+      "path": "figures/final/figure1_resource_gaps.pdf",
+      "sha256": "d1669d996f25e7ef398827d457f759246d9c702fe2c9212fea05c95f80468132"
+    },
+    {
+      "path": "figures/final/figure1_resource_gaps.png",
+      "sha256": "c5f5c95858eec39de4ecc14dc91d187b845be876a03d4dec16364acf70d6d987"
+    },
+    {
+      "path": "figures/final/figure2_delta_gap.pdf",
+      "sha256": "85326bdd62a1efb65afe08ad6b607655d65bb015db98b7ec39bc4826797508d2"
+    },
+    {
+      "path": "figures/final/figure2_delta_gap.png",
+      "sha256": "fe0524bc5ec58e2ec0c933dd6b6b8557aa124bd133e87c05bb55859d1917263c"
+    },
+    {
+      "path": "figures/final/figure3_subgroup_penalties.pdf",
+      "sha256": "0089e0174905c2986ea5cb78d2c173c5784b1c9a5a61abfc04df692734ed004e"
+    },
+    {
+      "path": "figures/final/figure3_subgroup_penalties.png",
+      "sha256": "404d9a3e1306e0d642d58814b9f2fa348b337e655d3a983f3e77e4ac168595ac"
+    },
+    {
+      "path": "figures/final/figure4_diagnostic_audit.pdf",
+      "sha256": "f6a0bdad1c503c1f2476751161481aaf63f5ddd16efa4a64a84f09fd8e83cf68"
+    },
+    {
+      "path": "figures/final/figure4_diagnostic_audit.png",
+      "sha256": "135c2fe19305c3e4bef831cb17659c235b52a80676023f3d91ede932eed406f0"
+    }
+  ]
+}

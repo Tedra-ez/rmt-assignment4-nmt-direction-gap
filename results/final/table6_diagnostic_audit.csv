@@ -1,0 +1,12 @@
+section,item,count,percent_of_errors,denominator,percent_within_section
+status,confirmed_error,37,,60,61.6666666667
+status,acceptable_paraphrase,8,,60,13.3333333333
+status,uncertain,15,,60,25
+error_type,meaning substitution,25,67.6,37,67.5675675676
+error_type,omission or truncation,10,27,37,27.027027027
+error_type,named entity or number error,1,2.7,37,2.7027027027
+error_type,unsupported addition or repetition,1,2.7,37,2.7027027027
+error_type,grammar or word-order defect,0,0,37,0
+source_reference_flag,none_detected,33,,60,55
+source_reference_flag,not_assessed,4,,60,6.66666666667
+source_reference_flag,suspected,23,,60,38.3333333333

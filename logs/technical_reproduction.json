@@ -1,0 +1,152 @@
+{
+  "started_at_utc": "2026-11-14T19:41:39.787507+00:00",
+  "verification_type": "technical reproduction; not an outside-team human confirmation",
+  "python": "3.12.15",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "scripts/analyze.py",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "stdout": "Input check passed: 3 models x 402 directions = 1,206 scores; hashes match the protocol.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_analysis.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.016s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/analyze.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Done in 3.86 s. Main table: results/main_summary.csv\nMoE 54.5B: DeltaGap = 4.28 [2.14, 6.23], Holm p = 0.00048\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/summarize_errors.py"
+      ],
+      "exit_code": 0,
+      "stdout": "                 section                               item  count  percent_of_errors\n                  status                    confirmed_error     37                  \u2014\n                  status              acceptable_paraphrase      8                  \u2014\n                  status                          uncertain     15                  \u2014\n              error_type               meaning substitution     25               67.6\n              error_type             omission or truncation     10               27.0\n              error_type       named entity or number error      1                2.7\n              error_type unsupported addition or repetition      1                2.7\n              error_type       grammar or word-order defect      0                0.0\n   source_reference_flag                      none_detected     33                  \u2014\n   source_reference_flag                       not_assessed      4                  \u2014\n   source_reference_flag                          suspected     23                  \u2014\nsuspected_flag_by_status                    confirmed_error     10                  \u2014\n\nTotal cases: 60. Saved: results/error_audit/error_summary.csv\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/export_final_results.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Exported 5 manuscript tables and 4 figures (PNG 600 dpi + vector PDF).\n",
+      "stderr": ""
+    }
+  ],
+  "csv_comparisons": [
+    {
+      "file": "results/per_script_scores.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/per_language_scores.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/main_summary.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/main_results_long.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/statistical_tests.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/robustness.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/leave_one_out.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/subgroup_results.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/diagnostics.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    },
+    {
+      "file": "results/error_audit/error_summary.csv",
+      "byte_identical": true,
+      "equal_within_1e_9": true,
+      "error": null
+    }
+  ],
+  "array_comparisons": [
+    {
+      "file": "results/bootstrap_draws.npz",
+      "key": "values",
+      "equal_within_1e_9": true
+    },
+    {
+      "file": "results/bootstrap_draws.npz",
+      "key": "models",
+      "equal_within_1e_9": true
+    },
+    {
+      "file": "results/bootstrap_draws.npz",
+      "key": "outcomes",
+      "equal_within_1e_9": true
+    },
+    {
+      "file": "results/permutation_statistics.npz",
+      "key": "values",
+      "equal_within_1e_9": true
+    },
+    {
+      "file": "results/permutation_statistics.npz",
+      "key": "models",
+      "equal_within_1e_9": true
+    }
+  ],
+  "success": true,
+  "completed_at_utc": "2026-11-14T19:41:49.351106+00:00",
+  "elapsed_seconds": 9.563
+}
