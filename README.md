@@ -1,8 +1,10 @@
-# Directional resource gaps in NLLB-200: a matched FLORES-200 secondary analysis
+# Paired Reanalysis of Translation Direction and Resource Gaps in NLLB Models on FLORES 200
 
 Final-project reproducibility candidate, Research Methods and Tools, SE-2418.
-The author list and CRediT contributions require author confirmation. Preparation
-with AI assistance is declared in the accompanying manuscript.
+The continuing team is Fariza Ismagambetova, Aizada Sembayeva and Zhanibek Yskak.
+The user has confirmed instructor permission for this three-person team.
+The CRediT allocations and final manuscript still require approval by all
+authors. Preparation with AI assistance is declared in the manuscript.
 
 This repository performs a quantitative secondary analysis of published NLLB-200
 scores. It does not train models, generate new translations, or use participant
@@ -32,11 +34,27 @@ The counts do not represent complete NLLB training exposure.
 | MoE 54.5B | 8.79 | 13.07 | 4.28 [2.14, 6.23] | 0.00048 |
 
 All score differences are in chrF++ points, not percentages of correct
-translations. Unrounded values are saved in `results/main_summary.csv`.
+translations. Values at the analysis export precision are saved in
+`results/main_summary.csv`; they are derived from the released rounded scores.
 
 ## Setup
 
-Unzip the final course package, then enter its `reproducibility` directory.
+Unzip the final course package. The `reproducibility` directory contains the
+complete runnable analysis. The accompanying `reproducibility_final.bundle`
+preserves the Git repository and its local `final` tag without public hosting.
+From the directory containing that bundle, restore the tagged version with:
+
+```bash
+git clone reproducibility_final.bundle final-analysis
+cd final-analysis
+git checkout final
+git rev-parse HEAD
+```
+
+Record the printed commit when documenting a human reproduction. Alternatively,
+enter the unpacked `reproducibility` directory to run the supplied files directly;
+the package manifest identifies that snapshot.
+
 Python 3.12 is recommended. No GPU, model weights, API keys, or credentials are
 needed. Internet access is needed to install packages and, optionally, retrieve
 the sentence-audit inputs.
@@ -50,9 +68,11 @@ python -m pip install -r requirements-lock.txt
 `requirements-lock.txt` records all package versions from the fresh preparation
 environment; `requirements.txt` lists the four direct dependencies.
 On Windows, activate with `.venv\Scripts\Activate.ps1`.
-Release scope: local tag `final`; not published remotely. The local tag is
-created after all final-package files are assembled. No public release URL is
-asserted by this package.
+The course brief requires a tagged reproducibility repository and does not
+specify public hosting. The supplied bundle carries the local `final` tag for
+course handoff. No remote `final` release or public final-version URL is claimed.
+Follow any separate upload instructions issued by the instructor. A journal
+submission would require a data/code availability route accepted by that journal.
 
 ## Reproduce every Results table and figure
 
@@ -168,7 +188,34 @@ translations has not been independently confirmed. No MIT relicensing of those
 files is claimed. See `THIRD_PARTY_NOTICES.md`.
 
 A fresh assistant technical reproduction is recorded in `logs/`. It is not an
-outside-team human reproduction. The earlier Aizada Appendix C concerned a
-team member and an earlier repository version, so it does not complete the
-final publication-readiness requirement. No final author approval, similarity
-check, journal submission, or published `final` release is claimed here.
+attestation that another person has run this final version. The earlier Aizada
+Appendix C records a team member's reproduction of an older Assignment 4 commit.
+It supports that historical validation contribution, but does not document a
+human rerun of the current final version.
+
+## Record a human reproduction
+
+The course and later publication checks have different requirements:
+
+- **Course Appendix B:** the main results must be reproduced by another person
+  using the README. This checklist does not specify that the person must be
+  outside the team. A human run of the final version is not yet recorded.
+- **Part 5, publication readiness after grading:** the main results must be
+  reproduced by a person outside the team. This stronger requirement is also
+  not yet completed; it is not an extra condition for preparing the local
+  course package.
+
+The reproducer should restore the tagged bundle, record the actual commit,
+create the environment, and execute `python scripts/reproduce_final.py`.
+The script writes technical comparison evidence; the human should inspect that
+evidence and the main result table. After completing the run, save a copy of
+`docs/human_final_reproduction_record.template.json` as
+`docs/human_final_reproduction_record.json` in the reproduced checkout and fill
+in actual identity, team relationship, version, commands, outcomes and evidence
+paths. The human attestation must describe what that person personally did.
+Do not fill pending fields from expected values or from an assistant's run.
+
+The existing technical logs retain their actual execution timestamps. Updating
+documentation does not mean a new analysis or human check has occurred. Final
+author approval, the university similarity check and journal submission are
+not certified by these logs.

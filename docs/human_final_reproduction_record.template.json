@@ -1,0 +1,47 @@
+{
+  "record_type": "Final Project human reproduction record",
+  "status": "pending",
+  "person": null,
+  "relationship_to_author_team": null,
+  "outside_author_team": null,
+  "purpose_claimed": [],
+  "tested_version": {
+    "release_tag": null,
+    "commit": null,
+    "package_manifest_sha256_if_used": null,
+    "checkout_state_before_run": null
+  },
+  "execution": {
+    "started_at_with_timezone": null,
+    "completed_at_with_timezone": null,
+    "operating_system": null,
+    "python_version": null,
+    "new_environment_created": null,
+    "commands_executed": [],
+    "evidence_files": []
+  },
+  "observed_results": {
+    "input_validation_passed": null,
+    "unit_tests_passed": null,
+    "main_results_table_reproduced": null,
+    "moe_delta_gap": null,
+    "moe_95_percent_interval": null,
+    "moe_holm_p": null,
+    "numerical_csv_files_compared": null,
+    "numerical_csv_files_matching": null,
+    "resampling_arrays_match": null,
+    "table_and_figure_exports_completed": null,
+    "differences_observed": null,
+    "readme_problems_or_fixes": null
+  },
+  "human_attestation": null,
+  "instructions": [
+    "Keep this template pending. After a person runs and reviews the final version, save a completed copy as docs/human_final_reproduction_record.json in that reproduced checkout.",
+    "Record the actual tag and commit printed by git rev-parse HEAD before running the documented commands. A record of an older Assignment 4 version is not a final-version record.",
+    "Use the README to create an environment and run python scripts/reproduce_final.py. Inspect the main table and technical comparison log; record actual outcomes and any differences.",
+    "Use purpose_claimed to state course_appendix_b and/or publication_part_5 only when the corresponding condition is actually met. Appendix B requires another person; Part 5 additionally requires a person outside the author team.",
+    "Record the person's team relationship truthfully. A team member's run does not satisfy the outside-team publication condition.",
+    "The named person must provide the human_attestation after personally performing and checking the run. Do not fill names, dates or pass outcomes from an assistant run or expected results.",
+    "Record evidence paths to the actual logs. Do not include passwords, tokens, private contact details or other confidential material."
+  ]
+}

@@ -26,3 +26,20 @@ The inherited error-audit CSV contains reviewer names and historical validation
 fields. They are retained as source records, not as an independent verification
 of human review, bilingual competence, inter-rater reliability, or consent to
 the final author list.
+
+The retained technical reproduction was executed by the assistant. Its logs
+record the actual run and numerical comparisons; they are not a human
+attestation. Documentation revisions preserve those logs and do not imply a
+new execution. Aizada's earlier Appendix C records her own check of an older
+Assignment 4 version and is not a record of testing this final snapshot.
+
+The final course package includes a Git bundle that preserves the local `final`
+tag, so its version can be recovered without a publicly hosted repository.
+Course Appendix B asks for reproduction by another person; Part 5 separately
+requires reproduction by someone outside the team for publication readiness
+after grading. The human-final-run template is deliberately blank until an
+actual person completes and reviews that version's run.
+
+The user has confirmed instructor permission for the continuing three-person
+team. That permission concerns course team eligibility; it does not establish
+each person's CRediT roles or approval of the final manuscript.
