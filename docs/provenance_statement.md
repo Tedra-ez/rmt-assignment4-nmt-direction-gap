@@ -43,3 +43,13 @@ actual person completes and reviews that version's run.
 The user has confirmed instructor permission for the continuing three-person
 team. That permission concerns course team eligibility; it does not establish
 each person's CRediT roles or approval of the final manuscript.
+
+The final-project history remains joined with the existing public Assignment 4
+history. The six earlier commits and the `assignment-4` tag are preserved.
+The final preparation commits use the project authors' Git identities: Zhanibek
+Yskak maintains publication and reproducibility, with Fariza Ismagambetova and
+Aizada Sembayeva credited as co-authors of the combined project snapshots.
+This is an attribution correction; original commit dates and numerical results
+are unchanged. Commit labels are not independent evidence of individual
+execution or approval. The technical-run disclosure above remains applicable.
+The public release is https://github.com/Tedra-ez/rmt-assignment4-nmt-direction-gap/releases/tag/final.

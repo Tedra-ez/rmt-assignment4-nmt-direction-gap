@@ -16,9 +16,10 @@ Completed preparation and confirmed scope:
 - The successful assistant technical rerun is retained in
   `logs/technical_reproduction.json`. Its dates are actual execution dates,
   rather than the date of a later document revision.
-- The course repository is supplied as runnable files and a Git bundle carrying
-  the local `final` tag. Public hosting is not required by the supplied course
-  brief. No remote `final` release is claimed.
+- The course repository is available at the public
+  [final release](https://github.com/Tedra-ez/rmt-assignment4-nmt-direction-gap/releases/tag/final),
+  with the tagged source and a Git bundle. The course package also contains the
+  runnable files. The `assignment-4` tag preserves the earlier public version.
 
 Remaining course completion checks:
 
@@ -46,5 +47,5 @@ Publication readiness after grading (Part 5):
 
 An assistant technical rerun does not certify any human attestation or approval.
 Journal submission is voluntary, happens after the course, and is not part of
-the course grade. The local package can be handed over without first publishing
-a public GitHub release.
+the course grade. Publishing this reproducibility release does not certify
+author approval, human reproduction, similarity checking or journal submission.

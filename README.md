@@ -39,10 +39,19 @@ translations. Values at the analysis export precision are saved in
 
 ## Setup
 
-Unzip the final course package. The `reproducibility` directory contains the
-complete runnable analysis. The accompanying `reproducibility_final.bundle`
-preserves the Git repository and its local `final` tag without public hosting.
-From the directory containing that bundle, restore the tagged version with:
+The public [final release](https://github.com/Tedra-ez/rmt-assignment4-nmt-direction-gap/releases/tag/final)
+provides the version used by the final manuscript. Clone its `final` tag:
+
+```bash
+git clone --branch final --single-branch https://github.com/Tedra-ez/rmt-assignment4-nmt-direction-gap.git final-analysis
+cd final-analysis
+git rev-parse HEAD
+```
+
+The release also provides `reproducibility_final.bundle` for offline transfer.
+The full course package contains the same bundle and a runnable
+`reproducibility` directory. As an alternative to the public clone, run these
+commands from the directory containing the downloaded or supplied bundle:
 
 ```bash
 git clone reproducibility_final.bundle final-analysis
@@ -52,8 +61,8 @@ git rev-parse HEAD
 ```
 
 Record the printed commit when documenting a human reproduction. Alternatively,
-enter the unpacked `reproducibility` directory to run the supplied files directly;
-the package manifest identifies that snapshot.
+enter the course package's unpacked `reproducibility` directory to run its files
+directly; that package's manifest identifies the supplied snapshot.
 
 Python 3.12 is recommended. No GPU, model weights, API keys, or credentials are
 needed. Internet access is needed to install packages and, optionally, retrieve
@@ -68,11 +77,12 @@ python -m pip install -r requirements-lock.txt
 `requirements-lock.txt` records all package versions from the fresh preparation
 environment; `requirements.txt` lists the four direct dependencies.
 On Windows, activate with `.venv\Scripts\Activate.ps1`.
-The course brief requires a tagged reproducibility repository and does not
-specify public hosting. The supplied bundle carries the local `final` tag for
-course handoff. No remote `final` release or public final-version URL is claimed.
-Follow any separate upload instructions issued by the instructor. A journal
-submission would require a data/code availability route accepted by that journal.
+The course brief requires a tagged reproducibility repository. This repository
+now supplies both the public `final` release and the bundle for course handoff.
+The earlier Assignment 4 version remains available at the `assignment-4` tag.
+Follow any separate upload instructions issued by the instructor. Public code
+availability does not complete the author or human-reproduction checks below.
+A journal submission must also meet that journal's data/code availability policy.
 
 ## Reproduce every Results table and figure
 
@@ -205,15 +215,25 @@ The course and later publication checks have different requirements:
   not yet completed; it is not an extra condition for preparing the local
   course package.
 
-The reproducer should restore the tagged bundle, record the actual commit,
-create the environment, and execute `python scripts/reproduce_final.py`.
-The script writes technical comparison evidence; the human should inspect that
-evidence and the main result table. After completing the run, save a copy of
+The reproducer should clone the public `final` tag or restore the tagged bundle,
+record the actual commit, operating system and Python version, and create the
+environment. Capture the command output, for example:
+
+```bash
+python scripts/reproduce_final.py > reproduction_console.log 2>&1
+```
+
+The script writes technical comparison evidence; the human should inspect the
+console log, `logs/technical_reproduction.json` and the main result table,
+including any failed check or numerical difference. After completing the run,
+save a copy of
 `docs/human_final_reproduction_record.template.json` as
 `docs/human_final_reproduction_record.json` in the reproduced checkout and fill
 in actual identity, team relationship, version, commands, outcomes and evidence
-paths. The human attestation must describe what that person personally did.
-Do not fill pending fields from expected values or from an assistant's run.
+paths. The human attestation must describe what that person personally did and
+include their signed or typed name and the actual date. A Part 5 reviewer must
+truthfully identify themselves as outside the author team. Do not fill pending
+fields from expected values or from an assistant's run.
 
 The existing technical logs retain their actual execution timestamps. Updating
 documentation does not mean a new analysis or human check has occurred. Final
